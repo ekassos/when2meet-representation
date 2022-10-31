@@ -1,0 +1,80 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import '~react-super-responsive-table/dist/SuperResponsiveTableStyle';
+
+:root {
+  --bs-font-sans-serif: 'Quicksand', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media screen and (max-width: 40em){
+  .responsiveTable tbody tr {
+    border: 1px solid #ccc;
+  }
+}
+
+#Home {
+  margin: 3%;
+  width: 90%;
+  .linkcontainer {
+    margin-top: 5%;
+    .btn {
+      font-size: 2em;
+    }
+  }
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+$endColor: rgb(26, 106, 2);
+
+.margintop {
+  margin-top: 3%;
+}
+
+.marginleft {
+  margin-left: 3%;
+}
+
+.marginright {
+  margin-right: 3%;
+}
+
+.time-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  Td, Th {
+    padding: 0;
+    font-size: 0.8em;
+    border: 1px solid white;
+  }
+  
+  .cell, .cellDisplay {
+    min-width: 3em;
+    min-height: 0.8em;
+    &.selected {
+      background-color: $endColor;
+    }
+    &.unselected {
+      background-color: rgb(220, 220, 220);
+    }
+  }
+
+  .cell {
+    &:hover {
+      background-color: rgb(208, 239, 255);
+    }
+  }
+}
+
+.display {
+  display: block;
+}
+
+.notdisplay {
+  display: none;
+}
