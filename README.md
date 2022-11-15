@@ -1,5 +1,7 @@
 # When2Meet Representation
 
+$\textcolor{ForestGreen}{\textbf{\emph{Completed:}}} \text{\emph{ Sunday, Oct 30, 2022}}$
+
 Introduction
 ============
 
